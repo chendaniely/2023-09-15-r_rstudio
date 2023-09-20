@@ -17,3 +17,7 @@ library(tidyverse)
 write_csv(mtcars, "mtcars.csv")
 ```
 
+```{r}
+write_csv(mtcars, "data/mtcars.csv")
+```
+
