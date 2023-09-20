@@ -3,6 +3,8 @@ title: "03-directories"
 author: "Daniel Chen"
 date: "`r Sys.Date()`"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r}
@@ -18,6 +20,20 @@ write_csv(mtcars, "mtcars.csv")
 ```
 
 ```{r}
-write_csv(mtcars, "data/mtcars.csv")
+#write_csv(mtcars, "data/mtcars.csv")
+getwd()
+```
+
+```{r}
+library(here)
+```
+
+```{r}
+here("data/mtcars.csv")
+```
+
+
+```{r}
+write_csv(mtcars, here("data/mtcars.csv"))
 ```
 
