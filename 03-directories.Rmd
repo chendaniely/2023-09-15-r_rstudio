@@ -1,0 +1,19 @@
+---
+title: "03-directories"
+author: "Daniel Chen"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+mtcars
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+write_csv(mtcars, "mtcars.csv")
+```
+
